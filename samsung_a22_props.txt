@@ -1,0 +1,44 @@
+# Samsung A22 (SM-A225F) Advanced build.prop overrides
+ro.product.model=SM-A225F
+ro.product.brand=samsung
+ro.product.name=a22nsex
+ro.product.device=a22
+ro.product.manufacturer=samsung
+ro.product.board=mt6769
+ro.build.product=a22
+ro.build.id=TP1A.220624.014
+ro.build.display.id=TP1A.220624.014.A225FXXS9DXE1
+ro.build.version.incremental=A225FXXS9DXE1
+ro.build.version.release=13
+ro.build.version.sdk=33
+ro.build.version.security_patch=2024-05-01
+ro.build.type=user
+ro.build.tags=release-keys
+ro.build.flavor=a22nsex-user
+ro.build.fingerprint=samsung/a22nsex/a22:13/TP1A.220624.014/A225FXXS9DXE1:user/release-keys
+
+# SoC / CPU Spoofing
+ro.board.platform=mt6769
+ro.soc.model=MT6769V/CT
+ro.soc.manufacturer=MediaTek
+
+# GPU Spoofing (Targeting Mali-G52 MP2)
+ro.hardware.egl=mali
+ro.opengles.version=196610
+vendor.display.driver.name=mali
+
+# Telephony Spoofing
+ro.telephony.default_network=9
+gsm.operator.alpha=Vodafone
+gsm.operator.numeric=20201
+gsm.sim.operator.alpha=Vodafone
+gsm.sim.operator.numeric=20201
+ro.telephony.call_ring.multiple=false
+
+# Audio Spoofing
+ro.audio.primary_hal=mt6769
+ro.audio.flinger_resampler_quality=4
+
+# Battery / Healthd (Defaults)
+ro.healthd.charge_counter=5000000
+ro.healthd.battery_capacity=5000
