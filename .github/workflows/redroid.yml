@@ -13,6 +13,8 @@ jobs:
       - name: System Setup
         run: |
           sudo apt-get update
+          # إزالة containerd.io لتجنب التعارض مع docker.io
+          sudo apt-get remove containerd.io -y || true
           sudo apt-get install -y docker.io adb
           curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb
           sudo dpkg -i cloudflared.deb
